@@ -11,7 +11,7 @@ let sum = a + b;
 let product = a * b;
 
 // prepare data to write 
-let result = `Sum: ${sum}\n Product:${product}`;
+let result = `Sum: ${sum}\nProduct:${product}`;
 console.log(result); // displaying the result 
 
 // writing data to the local file 
