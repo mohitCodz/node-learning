@@ -6,6 +6,6 @@ const http = require('http');
 //     console.log(req);
 // }
 
-http.createServer(function(req,res){
-    console.log(req);
+http.createServer((req,res)=>{
+console
 });
