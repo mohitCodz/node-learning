@@ -9,5 +9,5 @@ const http = require('http');
 const server = http.createServer((req,res)=>{
 console.log(req);
 });
-// server is listening
+// server is listening at port number 3000
 server.listen(3000);
