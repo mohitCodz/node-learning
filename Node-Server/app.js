@@ -6,4 +6,6 @@ const http = require('http');
 //     console.log(req);
 // }
 
-http.createServer(requestListener);
+http.createServer(function(req,res){
+    console.log(req);
+});
