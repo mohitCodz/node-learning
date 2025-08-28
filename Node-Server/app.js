@@ -9,5 +9,5 @@ const http = require('http');
 const server = http.createServer((req,res)=>{
 console.log(req);
 });
-// server is 
+// server is listening
 server.listen(3000);
