@@ -23,12 +23,13 @@ const server = http.createServer((req, res) => {
     res.write("</html>");
     return res.end();
   }
-  res.setHeader("Content-Type", "text/html");
-  res.write("<html>");
-  res.write("<head><title>Submit</title></head>");
-  res.write("<body><h1>Thanks for Submitting Details</h1></body>");
-  res.write("</html>");
-  res.end();
+  // redirecting requests
+//   res.setHeader("Content-Type", "text/html");
+//   res.write("<html>");
+//   res.write("<head><title>Submit</title></head>");
+//   res.write("<body><h1>Thanks for Submitting Details</h1></body>");
+//   res.write("</html>");
+//   res.end();
 });
 
 const PORT = 5001;
