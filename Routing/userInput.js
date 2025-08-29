@@ -1,5 +1,5 @@
-const http = require('http'); // server
-const fs = require('fs');
+const http = require("http"); // server
+const fs = require("fs"); // file write
 const server = http.createServer((req, res) => {
   console.log(req.url, req.method, req.headers);
   if (req.url === "/") {
@@ -23,15 +23,18 @@ const server = http.createServer((req, res) => {
     res.write("</body>");
     res.write("</html>");
     return res.end();
-  } else if(req.url.toLocaleLowerCase() === "/submit-details" && req.method === "POST"){
-req.write
+  } else if (
+    req.url.toLocaleLowerCase() === "/submit-details" &&
+    req.method === "POST"
+  ) {
+    req.write;
   }
-//   res.setHeader("Content-Type", "text/html");
-//   res.write("<html>");
-//   res.write("<head><title>Submit</title></head>");
-//   res.write("<body><h1>Thanks for Submitting Details</h1></body>");
-//   res.write("</html>");
-//   res.end();
+  //   res.setHeader("Content-Type", "text/html");
+  //   res.write("<html>");
+  //   res.write("<head><title>Submit</title></head>");
+  //   res.write("<body><h1>Thanks for Submitting Details</h1></body>");
+  //   res.write("</html>");
+  //   res.end();
 });
 
 const PORT = 5002;
