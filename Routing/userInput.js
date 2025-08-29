@@ -8,8 +8,7 @@ const server = http.createServer((req, res) => {
     res.write('<body><h1>Enter your details</h1>');
     res.write('</body>');
     res.write('<form>');
-    //
-      res.write('<form action="/submitDetails" meathod ="POST');
+    //   res.write('<form action="/submitDetails" meathod ="POST');
     res.write(
       '<input type = "text" id ="name" name="name" placeholder=""Enter your name><br><br>');
     res.write('<lable for="gender">Gender:>/lable>');
