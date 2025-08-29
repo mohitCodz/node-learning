@@ -5,7 +5,7 @@ const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "text/html");
     res.write("<html>");
     res.write("<head><title>Form</title></head>");
-    res.write("<body><h1>Enter your details</h1>");
+    res.write("<body>");
 
     res.write("<form>");
     //   res.write('<form action="/submitDetails" meathod ="POST');
@@ -31,9 +31,7 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 
-const PORT = 5000;
-server.listen =
-  (PORT,
-  () => {
+const PORT = 5001;
+server.listen(PORT,() => {
     console.log(`Server is listening at PORT ${PORT}`);
   });
