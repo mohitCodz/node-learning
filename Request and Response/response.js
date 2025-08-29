@@ -2,7 +2,9 @@
 
 const http = require('http');
 const server = http.createServer((req,res)=>{
-
+res.setHeader('Content-Type', 'text/html');
+res.write('<html');
+res.write('/html');
 });
 const PORT = 30004;
 server.listen(PORT,()=>{
