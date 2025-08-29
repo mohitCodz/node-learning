@@ -8,16 +8,16 @@ const server = http.createServer((req, res) => {
     res.write("<body>");
 
     res.write("<form>");
-    //   res.write('<form action="/submitDetails" meathod ="POST');
+    //   res.write('<form action="/submitDetails" method="POST">');
     res.write(
-      '<input type = "text" id ="name" name="name" placeholder=""Enter your name><br><br>'
+      '<input type="text" id="name" name="name" placeholder="Enter your name"><br><br>'
     );
-    res.write('<lable for="gender">Gender:/lable>');
-    res.write('<input type="radio" id="male" name="gender" value =""');
-    res.write('<lable for ="male">Male</lable>');
-    res.write('<input type="radio" id="female" name="gender" value =""');
-    res.write('<lable for ="female">Female</lable>');
-    res.write('<button type="submit">Submit>/nutton>');
+    res.write('<label for="gender">Gender:</label>');
+    res.write('<input type="radio" id="male" name="gender" value="">');
+    res.write('<label for="male">Male</label>');
+    res.write('<input type="radio" id="female" name="gender" value="">');
+    res.write('<label for="female">Female</label>');
+    res.write('<button type="submit">Submit</button>');
     res.write("</form>");
     res.write("</body>");
     res.write("</html>");
@@ -32,6 +32,6 @@ const server = http.createServer((req, res) => {
 });
 
 const PORT = 5001;
-server.listen(PORT,() => {
-    console.log(`Server is listening at PORT ${PORT}`);
-  });
+server.listen(PORT, () => {
+  console.log(`Server is listening at PORT ${PORT}`);
+});
