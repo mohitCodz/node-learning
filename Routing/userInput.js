@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
     res.write("<head><title>Form</title></head>");
     res.write("<body>");
 
-    res.write('<form action="submit" meathod="POST">');
+    res.write('<form action="submit-details" meathod="POST">');
     //   res.write('<form action="/submitDetails" method="POST">');
     res.write(
       '<input type="text" id="name" name="name" placeholder="Enter your name"><br><br>'
@@ -25,8 +25,8 @@ const server = http.createServer((req, res) => {
   }
   res.setHeader("Content-Type", "text/html");
   res.write("<html>");
-  res.write("<head><title>Node.js</title></head>");
-  res.write("<body><h1>Come back again!</h1></body>");
+  res.write("<head><title>Submit</title></head>");
+  res.write("<body><h1>Thanks for Submitting Details</h1></body>");
   res.write("</html>");
   res.end();
 });
