@@ -17,13 +17,14 @@ const server = http.createServer((req, res) => {
     res.write('<label for="male">Male</label>');
     res.write('<input type="radio" id="female" name="gender" value="">');
     res.write('<label for="female">Female</label>');
-    res.write('<button type="submit">Submit</button>');
+    res.write('<br><button type="submit">Submit</button>');
     res.write("</form>");
     res.write("</body>");
     res.write("</html>");
     return res.end();
   }
   // redirecting requests
+
 //   res.setHeader("Content-Type", "text/html");
 //   res.write("<html>");
 //   res.write("<head><title>Submit</title></head>");
@@ -32,7 +33,7 @@ const server = http.createServer((req, res) => {
 //   res.end();
 });
 
-const PORT = 5001;
+const PORT = 5002;
 server.listen(PORT, () => {
   console.log(`Server is listening at PORT ${PORT}`);
 });
