@@ -3,7 +3,7 @@ const server = http.createServer((req,res)=>{
 console.log(req.url,req.method,req.headers);
 if(req.url === '/')
     res.write("<h1>Welcome to Home Page</h1>");
-    res.write("<form action");
+    res.write('<form action="/submitDetails" meathod ="POST');
         res.write("<h1>Welcome to Home Page</h1>");
             res.write("<h1>Welcome to Home Page</h1>");
                 res.write("<h1>Welcome to Home Page</h1>");
