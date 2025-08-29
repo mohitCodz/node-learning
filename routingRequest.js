@@ -20,7 +20,7 @@ res.end();
 res.setHeader('Content-Type', 'text/html');
 res.write('<html>');
 res.write('<head><title>Node.js</title></head>');
-res.write('<body><h1>Keep Coding ! Keep Building Logics</h1></body>');
+res.write('<body><h1>Come back again!</h1></body>');
 res.write('</html>');
 res.end();
 });
