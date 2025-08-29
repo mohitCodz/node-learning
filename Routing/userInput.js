@@ -27,12 +27,12 @@ const server = http.createServer((req, res) => {
 fs.writeFileSync('user.txt','Hello');
 res.statusCode = 302; // status code 302 ( found )
   }
-//   res.setHeader("Content-Type", "text/html");
-//   res.write("<html>");
-//   res.write("<head><title>Submit</title></head>");
-//   res.write("<body><h1>Thanks for Submitting Details</h1></body>");
-//   res.write("</html>");
-//   res.end();
+  res.setHeader("Content-Type", "text/html");
+  res.write("<html>");
+  res.write("<head><title>Submit</title></head>");
+  res.write("<body><h1>Thanks for Submitting Details</h1></body>");
+  res.write("</html>");
+  res.end();
 });
 
 const PORT = 5002;
