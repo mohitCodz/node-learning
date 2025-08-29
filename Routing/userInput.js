@@ -24,6 +24,7 @@ const server = http.createServer((req, res) => {
     res.write("</html>");
     return res.end();
   } 
+  // redirecting requests
   else if(req.url.toLowerCase() === "/submit-details" && req.method === "POST"){
     fs.writeFileSync('user.txt','Developer');
     res.statusCode = 302; // status code 
