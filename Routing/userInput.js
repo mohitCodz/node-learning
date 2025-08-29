@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     res.write(
       '<input type = "text" id ="name" name="name" placeholder=""Enter your name><br><br>'
     );
-    res.write('<lable for="gender">Gender:>/lable>');
+    res.write('<lable for="gender">Gender:/lable>');
     res.write('<input type="radio" id="male" name="gender" value =""');
     res.write('<lable for ="male">Male</lable>');
     res.write('<input type="radio" id="female" name="gender" value =""');
