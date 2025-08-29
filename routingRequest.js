@@ -9,3 +9,6 @@ res.end();
 });
 
 const PORT = 30005; // port 30005
+server.listen(PORT,()=>{
+ console.log(`Server is listening at PORT ${PORT}`);
+});
