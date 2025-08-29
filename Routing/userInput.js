@@ -8,7 +8,8 @@ const server = http.createServer((req, res) => {
   );
   res.write('<lable for="gender">Gender:>/lable>');
   res.write('<input type="radio" id="male" name="gender" value =""');
-  res.write
+  res.write('<lable for ="male">Male</lable>');
+ res.write('<input type="radio" id="female" name="gender" value =""');
 });
 
 const PORT = 5000;
