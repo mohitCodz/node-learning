@@ -1,7 +1,24 @@
-const http = require('http');
-const server =  http.createServer((req,res)=>{
-console.log(req.url,req.method);
-res.write(`<html lang="en">
+const http = require("http");
+const server = http.createServer((req, res) => {
+  console.log(req.url, req.method);
+  // routing
+  if (req.url === "/") {
+    res.write("<h1>Welcome to home page</h1>");
+    return res.end();
+  } else if (req.url.toLowerCase === "/men") {
+    res.write("<h1>Welcome to men section</h2>");
+    return res.end();
+  } else if (req.url.toLowerCase === "/women") {
+    res.write("<h1>Welcome to women section</h2>");
+    return res.end();
+  } else if (req.url.toLowerCase === "/kids") {
+    res.write("<h1>Welcome to kids section</h2>");
+    return res.end();
+  } else if (req.url.toLowerCase === "/cart") {
+    res.write("<h1>Welcome to your cart</h2>");
+    return res.end();
+  }
+  res.write(`<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,8 +39,8 @@ res.write(`<html lang="en">
   </body>
 </html>
     `);
-    res.end();
+  res.end();
 });
-server.listen(3001,()=>{
-console.log('Server is listening now')
+server.listen(3001, () => {
+  console.log("Server is listening now");
 });
