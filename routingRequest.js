@@ -8,7 +8,7 @@ res.write('<html>');
 res.write('<head><title>Node.js</title></head>');
 res.write('<body><h1>Welcone to HOME page !</h1></body>');
 res.write('</html>');
-res.end();
+return res.end();
 }else if( req.url === '/products'){
 res.setHeader('Content-Type', 'text/html');
 res.write('<html>');
