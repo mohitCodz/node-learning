@@ -1,4 +1,4 @@
-// showing and redirecting the user 
+// simple landing page and redirecting the user to HOME, MEN, WOMEN, CART section
 const http = require("http");
 
 const server = http.createServer((req, res) => {
