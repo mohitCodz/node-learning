@@ -4,7 +4,7 @@ const http = require('http');
 const server = http.createServer((req,res)=>{
 res.setHeader('Content-Type', 'text/html');
 res.write('<html');
-res.write('<head>')
+res.write('<head><title>Node.js</title></head>')
 res.write('/html');
 });
 const PORT = 30004;
