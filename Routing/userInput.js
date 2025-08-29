@@ -23,9 +23,10 @@ const server = http.createServer((req, res) => {
     res.write("</body>");
     res.write("</html>");
     return res.end();
-  } else if(req.url.toLocaleLowerCase() === "/submit-details" && req.meathod === "POST"){
-fs.writeFileSync('user.txt','Hello');
-res.statusCode = 302; // status code 302 ( found )
+  } 
+  else if(req.url.toLowerCase() === "/submit-details" && req.meathod === "POST"){
+fs.writeFileSync('user.txt','Developer');
+res.statusCode = 302; // status code 
 res.setHeader('Location','/'); // home page redirection
   }
   res.setHeader("Content-Type", "text/html");
