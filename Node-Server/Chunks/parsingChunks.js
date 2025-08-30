@@ -39,7 +39,7 @@ const server = http.createServer((req, res) => {
         console.log(fullData); 
         //parsing chunks
         const params = new URLSearchParams(fullData);
-        const jsonObject ={};
+        const bodyObject ={};
         for(const [key,value] of params.entries()){
             jsonObject[key] = value;
         }
