@@ -40,9 +40,9 @@ const server = http.createServer((req, res) => {
         //parsing chunks
         const params = new URLSearchParams(fullData);
         const bodyObject ={};
-        for(const [key,value] of params.entries()){
-            bodyObject[key] = value; // storing value at bodyObject
-        }
+        // for(const [key,value] of params.entries()){
+        //     bodyObject[key] = value; // storing value at bodyObject
+        // }
         console.log(bodyObject);
     });
     fs.writeFileSync('user-details.txt','Developer');
