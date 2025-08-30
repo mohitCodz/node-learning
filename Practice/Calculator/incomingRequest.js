@@ -31,6 +31,7 @@ const requestHandler = (req, res) => {
     }
     else if (req.url.toLowerCase === "./calculate-result" && req.method == "POST") {
         sumRequestHandler(req, res);
+            return res.end();
     }
     res.setHeader('Content-type', 'text/html');
     res.write(`
