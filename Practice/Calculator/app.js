@@ -1,5 +1,5 @@
 const http = require('http');
-const requestHandler = require('./incomingRequest')
+const { requestHandler } = require('./incomingRequest')
 const server = http.createServer(requestHandler);
 const PORT = 5005;
 server.listen(PORT,()=>{
