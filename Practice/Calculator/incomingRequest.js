@@ -14,8 +14,8 @@ const requestHandler = (req, res) => {
         );
         return res.end();
     }
-    else if (req.url.toLowerCase() === "/calculator"){
-       res.write(`
+    else if (req.url.toLowerCase() === "/calculator") {
+        res.write(`
         <html>
 <head><title>Calculator</title></head>
 <body>
@@ -27,10 +27,21 @@ const requestHandler = (req, res) => {
 </form>
 </body>
 </html>`);
-  return res.end();
-    } 
-    else if (req.url.toLowerCase === "./calculate-result" && req.method == "POST")
-        sumRequestHandler();
+        return res.end();
     }
+    else if (req.url.toLowerCase === "./calculate-result" && req.method == "POST") {
+        sumRequestHandler(req, res);
+    }
+    res.setHeader('Content-type', 'text/html');
+    res.write(`
+        <html>
+<head><title>Calculator</title></head>
+<body>
+<h1>404-Page not found</h1>
+<a href="/">Home Page</a>
+</body>
+</html>`
+    );
+    return res.end();
 }
 exports.requestHandler = requestHandler;
