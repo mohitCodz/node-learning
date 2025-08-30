@@ -45,8 +45,9 @@ const server = http.createServer((req, res) => {
         // }
         const bodyObject = Object.fromEntries(params); // simple and short way to create object
         console.log(bodyObject);
+            fs.writeFileSync('user-details.txt',JSON.stringify(bodyObject)); // writing in the file
     });
-    fs.writeFileSync('user-details.txt','Developer');
+
     res.statusCode = 302; // status code 
     res.setHeader('Location','/'); // home page redirection
     return res.end();
