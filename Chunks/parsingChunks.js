@@ -2,6 +2,7 @@
 
 const fs = require('fs'); // file write
 const { buffer } = require('stream/consumers');
+
 // creating a handler to handle the use request
 const requestHandler = ((req, res) => {
   console.log(req.url, req.method,);
@@ -60,4 +61,3 @@ const requestHandler = ((req, res) => {
   res.write("</html>");
   res.end();
 });
-
