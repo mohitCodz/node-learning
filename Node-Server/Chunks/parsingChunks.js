@@ -38,6 +38,12 @@ const server = http.createServer((req, res) => {
         const fullData = Buffer.concat(body).toString(); // Buffer.concat joins all chunks togeather
         console.log(fullData); 
         //parsing chunks
+        const params = new URLSearchParams(fullData);
+        const jsonObject ={};
+        for(const [key,value] of params.entries()){
+            jsonObject[key] = value;
+        }
+        console.log(jsonObject);
     });
     fs.writeFileSync('user-details.txt','Developer');
     res.statusCode = 302; // status code 
