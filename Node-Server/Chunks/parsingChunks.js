@@ -1,3 +1,4 @@
+// parsing chunks
 const http = require('http'); // server
 const fs = require('fs'); // file write
 const { buffer } = require('stream/consumers');
@@ -37,7 +38,7 @@ const server = http.createServer((req, res) => {
         const fullData = Buffer.concat(body).toString(); // Buffer.concat joins all chunks togeather
         console.log(fullData); 
     });
-    fs.writeFileSync('user.txt','Developer');
+    fs.writeFileSync('user-details.txt','Developer');
     res.statusCode = 302; // status code 
     res.setHeader('Location','/'); // home page redirection
     return res.end();
