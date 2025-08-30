@@ -39,10 +39,11 @@ const server = http.createServer((req, res) => {
         console.log(fullData); 
         //parsing chunks
         const params = new URLSearchParams(fullData);
-        const bodyObject ={};
+        // const bodyObject ={};
         // for(const [key,value] of params.entries()){
         //     bodyObject[key] = value; // storing value at bodyObject
         // }
+        const bodyObject = Object.fromEntries(params); // simple and short way to create object
         console.log(bodyObject);
     });
     fs.writeFileSync('user-details.txt','Developer');
