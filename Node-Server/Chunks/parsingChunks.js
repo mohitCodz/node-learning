@@ -41,9 +41,9 @@ const server = http.createServer((req, res) => {
         const params = new URLSearchParams(fullData);
         const bodyObject ={};
         for(const [key,value] of params.entries()){
-            jsonObject[key] = value;
+            bodyObject[key] = value; // storing value at bodyObject
         }
-        console.log(jsonObject);
+        console.log(bodyObject);
     });
     fs.writeFileSync('user-details.txt','Developer');
     res.statusCode = 302; // status code 
