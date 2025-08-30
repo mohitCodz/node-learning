@@ -19,10 +19,10 @@ const requestHandler = (req, res) => {
 <head><title>Calculator</title></head>
 <body>
 <h1>Calculate anything</h1>
-<form>
+<form action="Calculator" meathod = "POST">
 <input type ="text"  placeholder = "First Number" name = "First">
 <input type ="text"  placeholder = "Second Number" name = "Second">
-<input type ="submit"
+<input type ="submit" value = "Sum">
 </form>
 </body>
 </html>`
