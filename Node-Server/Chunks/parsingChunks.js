@@ -37,6 +37,7 @@ const server = http.createServer((req, res) => {
     req.on('end',()=>{
         const fullData = Buffer.concat(body).toString(); // Buffer.concat joins all chunks togeather
         console.log(fullData); 
+        //parsing chunks
     });
     fs.writeFileSync('user-details.txt','Developer');
     res.statusCode = 302; // status code 
