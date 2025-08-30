@@ -25,7 +25,7 @@ const requestHandler = (req, res) => {
 <input type ="submit" value = "Sum">
 </form>
 </body>
-</html>`
+</html>`);
     }
 }
 exports.requestHandler = requestHandler;
