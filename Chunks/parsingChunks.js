@@ -1,10 +1,8 @@
 // parsing chunks
-
+const http = require('http'); // server
 const fs = require('fs'); // file write
 const { buffer } = require('stream/consumers');
-
-// creating a handler to handle the use request
-const requestHandler = ((req, res) => {
+const server = http.createServer((req, res) => {
   console.log(req.url, req.method,);
   if (req.url === "/") {
     res.setHeader("Content-Type", "text/html");
@@ -62,5 +60,7 @@ const requestHandler = ((req, res) => {
   res.end();
 });
 
-// exporting module
-module.export = requestHandler;
+const PORT = 5003;
+server.listen(PORT, () => {
+  console.log(`Server is listening at PORT ${PORT}`);
+});
