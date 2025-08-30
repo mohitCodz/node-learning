@@ -61,3 +61,7 @@ const requestHandler = ((req, res) => {
   res.write("</html>");
   res.end();
 });
+
+// exporting module
+
+module.export = requestHandler;
