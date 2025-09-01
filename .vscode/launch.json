@@ -13,7 +13,8 @@
             ],
             "program": "${workspaceFolder}/npm/app.js",
             "restart": true,
-            "runtimeExecutable": "node"
+            "runtimeExecutable": "nodemon",
+            "console": "integratedTerminal"
         }
     ]
 }
