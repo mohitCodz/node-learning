@@ -22,6 +22,12 @@ app.use((req, res, next) => {
   next();
 });
 
+// sending Response
+
+app.use((req,res,next)=>{
+
+});
+
 const server = http.createServer(app);
 const PORT = 5009;
 server.listen(PORT, () => {
