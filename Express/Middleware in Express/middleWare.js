@@ -12,8 +12,8 @@ app.use('/user', requestHandler); // mount it on /user
 
 // First middleware
 app.use((req, res, next) => {
-  console.log("irst Middleware");
-  next();
+  console.log("First Middleware");
+  next(); // request will go to next middleWare
 });
 
 // Second middleware
