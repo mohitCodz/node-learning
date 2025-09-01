@@ -1,7 +1,9 @@
 // Core Modules
 const http = require('http'); // server
+
 // External Modules
 const express = require('express');
+
 //Local Module
 const requestHandler = require('./user'); //importing 
 const server = http.createServer(requestHandler);
