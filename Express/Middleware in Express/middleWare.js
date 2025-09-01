@@ -10,7 +10,7 @@ const app = express(); // executing express
 const requestHandler = require('./user'); 
 app.use('/user', requestHandler); // mount it on /user
 
-// we can add middleWare by using .use
+// we can add middleware by using .use
 // First middleware 
 app.use((req, res, next) => {
   console.log("First Middleware");
