@@ -12,7 +12,7 @@ app.use('/user', requestHandler); // mount it on /user
 
 // First middleware
 app.use((req, res, next) => {
-  console.log("First Middleware");
+  console.log("irst Middleware");
   next();
 });
 
