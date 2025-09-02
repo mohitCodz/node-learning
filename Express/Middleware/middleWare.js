@@ -10,7 +10,7 @@ app.use('/user', requestHandler); // mount it on /user
 // we can add middleware by using .use
 // First middleware 
 app.use((req, res, next) => {
-  console.log("First Middleware");
+  console.log("First Middleware", req.url,req.method);
   next(); // request will go to next middleWare
 });
 
