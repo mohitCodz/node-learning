@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 // Second middleware
 app.use((req, res, next) => {
-  console.log("Second Middleware");
+  console.log("Second Middleware",req.url,req.method);
   next();
 });
 
