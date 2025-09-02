@@ -1,6 +1,3 @@
-// Core Modules
-const http = require('http'); // server
-
 // External Modules
 const express = require('express');
 
