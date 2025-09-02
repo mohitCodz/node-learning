@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 // Third Middleware
 app.use((req,res,next)=>{
 console.log("Thirs Middleware");
-res.send('<p1>Response is sent Sucessfully</p1>');
+res.send('<p1>Response is sent Sucessfully</p1>'); // sending response
 });
 
 const server = http.createServer(app);
