@@ -1,4 +1,4 @@
-// Handling
+// Handling all 
 const fs = require('fs'); // file write
 const { buffer } = require('stream/consumers');
 
