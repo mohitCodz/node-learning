@@ -7,3 +7,6 @@ console.log(req.url,req.method);
 
 // port
 const PORT = 300001;
+server.listen(()=>{
+    
+})
