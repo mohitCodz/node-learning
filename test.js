@@ -1,12 +1,13 @@
-// creating a server
-
 const http = require('http');
-const server = http.createServer((req,res)=>{
-console.log(req);
+
+const server = http.createServer((req, res) => {
+  console.log(req.url); // log just the URL instead of the whole request object
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello, server is running!');
 });
 
-// port
-const PORT = 300001;
-server.listen(PORT,()=>{
-console.log(`Server is listenign at PORT${PORT}`);
+// valid port
+const PORT = 3000;
+server.listen(PORT, () => {
+  console.log(`Server is listening at PORT ${PORT}`);
 });
