@@ -1,15 +1,10 @@
-// Core Modules
-const http = require('http'); // server
+const http = require('http');
+const app = require('./app'); // Import the Express app
 
-// External Modules
-const express = require('express');
+const PORT = 5009;
 
-const app = express(); // executing express
-
-//Local Module
-const requestHandler = require('./handlingRoutes'); //importing 
 const server = http.createServer(app);
-const PORT = 5009; // port 
-server.listen(PORT,()=>{
-console.log(`Servre is listening at PORT${PORT}`);
+
+server.listen(PORT, () => {
+    console.log(`Server is listening at PORT ${PORT}`);
 });
