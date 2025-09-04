@@ -22,9 +22,3 @@ This repo is where I practice and learn **Node.js from basics**.
 ## npm
 - What is npm
 - npm commands
-# Express
-- What is Express ?
-- It's uses.
-## Middleware
-- Basic Middleware
-- Sending Response
