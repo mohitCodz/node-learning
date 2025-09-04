@@ -5,6 +5,7 @@ res.send('<p>Welcome to submit details page</p>');
 next(); // request will go the next middleware
 });
 
+// 2nd middleware
 app.use('/submit-details',(req,res,next)=>{
     console.log("Second Middleware");
 res.send('<p>Welcome to submit details page</p>');
