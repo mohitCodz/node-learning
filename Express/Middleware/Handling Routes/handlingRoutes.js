@@ -10,3 +10,8 @@ app.use('/submit-details',(req,res,next)=>{
     console.log("Second Middleware");
 res.send('<p>Welcome to submit details page</p>');
 });
+
+app.use('/',(req,res,next)=>{
+    console.log("Second Middleware");
+res.send('<p>Welcome to Home</p>');
+});
